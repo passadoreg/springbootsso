@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.keycloak:keycloak-client-registration-api:3.4.3.Final-redhat-2">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/keycloak/keycloak-client-registration-api/3.4.3.Final-redhat-2/keycloak-client-registration-api-3.4.3.Final-redhat-2.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/keycloak/keycloak-client-registration-api/3.4.3.Final-redhat-2/keycloak-client-registration-api-3.4.3.Final-redhat-2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/keycloak/keycloak-client-registration-api/3.4.3.Final-redhat-2/keycloak-client-registration-api-3.4.3.Final-redhat-2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
