@@ -26,7 +26,7 @@ public class ProductServiceTest {
 
     @BeforeClass
     public static void setup() throws IOException {
-        TestsHelper.baseUrl = "http://localhost:8081";
+        TestsHelper.baseUrl = "http://localhost:8080";
         //TestsHelper.keycloakBaseUrl  = "set keycloak server docker IP"
         TestsHelper.testRealm="quickstart";
         TestsHelper.importTestRealm("admin","admin","/quickstart-realm.json");
