@@ -20,6 +20,7 @@ package org.keycloak.quickstart.springboot.web;
 import org.keycloak.quickstart.springboot.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -30,6 +31,7 @@ import java.util.List;
 import java.util.Map;
 
 
+@CrossOrigin
 @RestController
 public class ProductServiceController {
 
@@ -38,11 +40,13 @@ public class ProductServiceController {
         
     private @Autowired HttpServletRequest request;
 
+	@CrossOrigin
 	@GetMapping(value = "/products", produces = MediaType.APPLICATION_JSON_VALUE)
 	public List<String> handleCustomersRequest(Principal principal) {
             return productService.getProducts();
 	}
 
+	@CrossOrigin
 	@GetMapping(value = "/public", produces = MediaType.APPLICATION_JSON_VALUE)
 	public Map<String, String> handlePublicRequest() {
 		return Collections.singletonMap("message", productService.getPublic());
